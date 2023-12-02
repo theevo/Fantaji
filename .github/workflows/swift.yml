@@ -10,7 +10,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  update-lyrics:
 
     runs-on: macos-latest
 
@@ -24,3 +24,4 @@ jobs:
     - uses: stefanzweifel/git-auto-commit-action@v5
       with:
         file_pattern: 'fantasy-lyrics.txt'
+        commit_message: Update lyrics
